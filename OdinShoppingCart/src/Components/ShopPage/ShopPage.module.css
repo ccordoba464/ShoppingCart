@@ -1,3 +1,11 @@
 .productContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  padding: 100px 200px;
+  gap: 20px;
+}
+
+.productCard {
+  background-color: #3f3d3d;
 }
