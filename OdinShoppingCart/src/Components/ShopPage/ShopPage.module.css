@@ -1,6 +1,6 @@
 .productContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-auto-rows: 300px;
   padding: 100px 200px;
   gap: 20px;

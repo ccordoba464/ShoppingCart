@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function NavBar(props) {
   return (
@@ -8,9 +9,18 @@ function NavBar(props) {
         <div className={styles.logo}>VG</div>
         <nav>
           <ul className={styles.ul}>
-            <li className={styles.li}>Home</li>
-            <li className={styles.li}>Shop</li>
-            <li className={styles.li}>Cart: {props.items}</li>
+            <li className={styles.li}>
+              <Link to="home" className={styles.link}>
+                Profile page
+              </Link>
+            </li>
+            <li className={styles.li}>
+              {" "}
+              <Link to="shop" className={styles.link}>
+                Shop page
+              </Link>
+            </li>
+            <li className={styles.li}>Cart: {props.itemCount}</li>
           </ul>
         </nav>
       </div>
@@ -19,7 +29,7 @@ function NavBar(props) {
 }
 
 NavBar.propTypes = {
-  items: PropTypes.number,
+  itemCount: PropTypes.number,
 };
 
 export default NavBar;

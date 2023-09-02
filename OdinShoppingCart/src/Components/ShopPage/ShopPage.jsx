@@ -9,6 +9,7 @@ function ShopPage() {
         <div className={styles.productCard}></div>
         <div className={styles.productCard}></div>
         <div className={styles.productCard}></div>
+        <div className={styles.productCard}></div>
       </div>
     </>
   );
