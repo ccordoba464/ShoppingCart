@@ -11,13 +11,13 @@ function NavBar(props) {
           <ul className={styles.ul}>
             <li className={styles.li}>
               <Link to="home" className={styles.link}>
-                Profile page
+                Home
               </Link>
             </li>
             <li className={styles.li}>
               {" "}
               <Link to="shop" className={styles.link}>
-                Shop page
+                Shop
               </Link>
             </li>
             <li className={styles.li}>Cart: {props.itemCount}</li>

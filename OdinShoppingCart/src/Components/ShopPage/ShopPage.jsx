@@ -5,44 +5,23 @@ import HOW from "../../Images/HOW.jpg";
 import VV1 from "../../Images/VV1.jpg";
 import midEverything from "../../Images/midEVERYTHING.jpg";
 import TIR from "../../Images/TrustInRimbo.jpg";
+import Item from "../Item/Item";
+
+const price = 200;
+const title = "Album Cover";
 
 function ShopPage() {
   return (
     <>
       <div className={styles.shopContainer}>
-        <div className={styles.title}>Vowel Gang Shop</div>
+        <div className={styles.title}>Shop Music</div>
         <div className={styles.productContainer}>
-          <div className={styles.productCard}>
-            <img src={Bloom} alt="Bloom or Boom" className={styles.itemImage} />
-          </div>
-          <div className={styles.productCard}>
-            <img
-              src={Calculated}
-              alt="Calculated Cover"
-              className={styles.itemImage}
-            />
-          </div>
-          <div className={styles.productCard}>
-            <img src={HOW} alt="HOW Cover" className={styles.itemImage} />
-          </div>
-          <div className={styles.productCard}>
-            <img src={VV1} alt="VV1 Cover" className={styles.itemImage} />
-          </div>
-          <div className={styles.productCard}>
-            <img
-              src={midEverything}
-              alt="midEverything Cover"
-              className={styles.itemImage}
-            />
-          </div>
-          <div className={styles.productCard}>
-            {" "}
-            <img
-              src={TIR}
-              alt="Trust In Rimbo Cover"
-              className={styles.itemImage}
-            />
-          </div>
+          <Item img={Bloom} title={title} price={price} />
+          <Item img={Calculated} title={title} price={price} />
+          <Item img={HOW} title={title} price={price} />
+          <Item img={VV1} title={title} price={price} />
+          <Item img={midEverything} title={title} price={price} />
+          <Item img={TIR} title={title} price={price} />
         </div>
       </div>
     </>
