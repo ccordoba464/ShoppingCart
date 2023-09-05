@@ -28,7 +28,7 @@ function Item(props) {
           <img src={props.img} alt="Cover" className={styles.itemImage} />
         </div>
         <div className={styles.itemName}>{props.title}</div>
-        <div className={styles.itemPrice}>{props.price}</div>
+        <div className={styles.itemPrice}>${props.price}</div>
         <div className={styles.buttonContainer}>
           <button className={styles.changeAmt} onClick={handleDecrement}>
             {"<"}

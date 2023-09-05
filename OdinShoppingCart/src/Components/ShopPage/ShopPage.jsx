@@ -4,12 +4,10 @@ import { Products } from "../../Products";
 import PropTypes from "prop-types";
 
 function ShopPage(props) {
-  console.log(typeof props.handleCart);
-
   return (
     <>
       <div className={styles.shopContainer}>
-        <div className={styles.title}>Shop Music</div>
+        <div className={styles.title}>Shop VG</div>
         <div className={styles.productContainer}>
           {Products.map((item, index) => (
             <Item
