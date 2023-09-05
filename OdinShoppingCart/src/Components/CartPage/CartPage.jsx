@@ -1,4 +1,4 @@
-import styles from "../CartPage/CartPage.module.css";
+import styles from "./CartPage.module.css";
 import PropTypes from "prop-types";
 
 function CartPage(props) {
