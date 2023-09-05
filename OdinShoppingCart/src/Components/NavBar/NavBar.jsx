@@ -22,7 +22,10 @@ function NavBar(props) {
             </li>
             <li className={styles.li}>
               <Link to="cart" className={styles.link}>
-                Cart: {props.itemCount}{" "}
+                Cart:{" "}
+                {props.cart.reduce((totalQuantity, item) => {
+                  return totalQuantity + item.quantity;
+                }, 0)}
               </Link>
             </li>
           </ul>
@@ -33,7 +36,7 @@ function NavBar(props) {
 }
 
 NavBar.propTypes = {
-  itemCount: PropTypes.number,
+  cart: PropTypes.array,
 };
 
 export default NavBar;

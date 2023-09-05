@@ -15,7 +15,7 @@ function CartPage(props) {
             </div>
             <div className={styles.buttonContainer}>
               <button className={styles.changeAmt}>{"<"}</button>
-              <input type="text" className={styles.input} placeholder="0" />
+              <input type="text" className={styles.input} />
               <button className={styles.changeAmt}>{">"}</button>
               <button className={styles.addCart}>Add to Cart</button>
             </div>

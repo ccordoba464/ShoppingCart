@@ -38,6 +38,7 @@
 
 .itemPrice,
 .totalPrice {
+  margin-top: 4px;
   font-size: 1.3rem;
 }
 

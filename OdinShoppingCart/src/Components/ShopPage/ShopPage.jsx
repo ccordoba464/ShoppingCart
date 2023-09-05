@@ -1,8 +1,11 @@
 import styles from "./ShopPage.module.css";
 import Item from "../Item/Item";
 import { Products } from "../../Products";
+import PropTypes from "prop-types";
 
-function ShopPage() {
+function ShopPage(props) {
+  console.log(typeof props.handleCart);
+
   return (
     <>
       <div className={styles.shopContainer}>
@@ -11,9 +14,11 @@ function ShopPage() {
           {Products.map((item, index) => (
             <Item
               key={index}
+              id={item.id}
               img={item.image}
               title={item.title}
               price={item.price}
+              handleCart={props.handleCart}
             />
           ))}
         </div>
@@ -21,5 +26,9 @@ function ShopPage() {
     </>
   );
 }
+
+ShopPage.propTypes = {
+  handleCart: PropTypes.func,
+};
 
 export default ShopPage;
