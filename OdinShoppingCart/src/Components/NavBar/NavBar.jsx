@@ -20,7 +20,11 @@ function NavBar(props) {
                 Shop
               </Link>
             </li>
-            <li className={styles.li}>Cart: {props.itemCount}</li>
+            <li className={styles.li}>
+              <Link to="cart" className={styles.link}>
+                Cart: {props.itemCount}{" "}
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
