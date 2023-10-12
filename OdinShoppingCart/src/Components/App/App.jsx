@@ -66,7 +66,7 @@ function App() {
       <div className={styles.pageContainer}>
         <NavBar cart={cart} />
         <Routes>
-          <Route path="/home" element={<HomePage handleCart={handleCart} />} />{" "}
+          <Route path="/" element={<HomePage handleCart={handleCart} />} />{" "}
           <Route
             path="/cart"
             element={
